@@ -1,0 +1,8 @@
+jsonschema
+Django==2.0.2
+django-cors-headers==2.2.0
+djangorestframework==3.7.7
+djangorestframework-jwt==1.11.0
+PyJWT==1.6.1
+pytz==2018.4
+rest-framework-auth0==0.4.6

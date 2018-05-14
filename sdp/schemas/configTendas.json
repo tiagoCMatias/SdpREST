@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "tag": {
+            "type": [
+                "string"
+            ]
+        },
+        "descricao": {
+            "type": [
+                "string"
+            ]
+        },
+        "tipo":{
+            "type": [
+              "number"
+            ]
+        }
+    },
+    "required": [
+        "tag",
+        "descricao",
+        "tipo"
+    ]
+}

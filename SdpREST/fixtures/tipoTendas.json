@@ -1,0 +1,26 @@
+[
+    {
+        "model": "sdp.tipoTenda",
+        "pk": 1,
+        "fields": {
+            "title": "Conica",
+            "description": "Tendas Conicas"
+        }
+    },
+    {
+        "model": "sdp.tipoTenda",
+        "pk": 2,
+        "fields": {
+            "title": "Iglo",
+            "description": "Tendas Iglo"
+        }
+    },
+    {
+        "model": "sdp.tipoTenda",
+        "pk": 3,
+        "fields": {
+            "title": "2 Aguas",
+            "description": "Tendas de 2 Aguas"
+        }
+    }
+]

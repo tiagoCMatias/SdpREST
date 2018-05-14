@@ -1,0 +1,149 @@
+//1 - Conica
+//2-  Iglo
+//3 - 2 Aguas
+[
+    {
+        "model": "sdp.configTenda",
+        "pk": 1,
+        "fields": {
+            "tag": "TC3",
+            "descricao": "Conica 3x3" ,
+            "tipo": 1
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 2,
+        "fields": {
+            "tag": "TC5",
+            "descricao": "Conica 5x5" ,
+            "tipo": 1
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 3,
+        "fields": {
+            "tag": "TI7.5",
+            "descricao": "Iglo 7.5" ,
+            "tipo": 2
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 4,
+        "fields": {
+            "tag": "TI10",
+            "descricao": "Iglo 10" ,
+            "tipo": 2
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 5,
+        "fields": {
+            "tag": "TI15",
+            "descricao": "Iglo 15" ,
+            "tipo": 2
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 6,
+        "fields": {
+            "tag": "TI20",
+            "descricao": "Iglo 20" ,
+            "tipo": 2
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 7,
+        "fields": {
+            "tag": "TI25",
+            "descricao": "Iglo 25" ,
+            "tipo": 2
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 8,
+        "fields": {
+            "tag": "T2A5",
+            "descricao": "2 Aguas 5" ,
+            "tipo": 3
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 9,
+        "fields": {
+            "tag": "T2A7.5",
+            "descricao": "2 Aguas 7.5" ,
+            "tipo": 3
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 10,
+        "fields": {
+            "tag": "T2A8",
+            "descricao": "2 Aguas 8" ,
+            "tipo": 3
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 11,
+        "fields": {
+            "tag": "T2A10",
+            "descricao": "2 Aguas 10" ,
+            "tipo": 3
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 12,
+        "fields": {
+            "tag": "T2A12.5",
+            "descricao": "2 Aguas 12.5" ,
+            "tipo": 3
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 13,
+        "fields": {
+            "tag": "T2A15",
+            "descricao": "2 Aguas 15" ,
+            "tipo": 3
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 14,
+        "fields": {
+            "tag": "T2A17.5",
+            "descricao": "2 Aguas 17.5" ,
+            "tipo": 3
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 15,
+        "fields": {
+            "tag": "T2A20",
+            "descricao": "2 Aguas 20" ,
+            "tipo": 3
+        }
+    },
+    {
+        "model": "sdp.configTenda",
+        "pk": 16,
+        "fields": {
+            "tag": "T2A25",
+            "descricao": "2 Aguas 25" ,
+            "tipo": 3
+        }
+    }
+]

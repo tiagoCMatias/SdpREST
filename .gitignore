@@ -118,3 +118,7 @@ coverage
 #prehab/prod_env.py
 prehab/settings/prod_env.py
 prehab/settings/production.py
+
+#SQL
+*.sqlite3
+

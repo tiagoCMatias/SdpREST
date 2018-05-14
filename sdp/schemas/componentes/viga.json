@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "properties": {
+        "tag": {
+            "type": [
+                "string"
+            ]
+        },
+        "nome": {
+            "type": [
+                "string"
+            ]
+        },
+        "descricao":{
+            "type": [
+              "number"
+            ]
+        },
+        "tipo": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        }
+    },
+    "required": [
+        "nome",
+        "descricao",
+        "tipo"
+    ]
+}
