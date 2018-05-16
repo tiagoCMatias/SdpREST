@@ -1,31 +1,25 @@
 {
     "type": "object",
     "properties": {
-        "tag": {
+        "local": {
             "type": [
                 "string"
             ]
         },
-        "nome": {
+        "cliente": {
             "type": [
                 "string"
             ]
         },
-        "descricao":{
+        "data":{
             "type": [
               "string"
             ]
-        },
-        "tipo": {
-            "type": "array",
-            "items": {
-                "type": "number"
-            }
         }
     },
     "required": [
-        "nome",
-        "descricao",
-        "tipo"
+        "local",
+        "cliente",
+        "data"
     ]
 }

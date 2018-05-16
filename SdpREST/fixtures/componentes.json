@@ -1,0 +1,110 @@
+[
+    {
+        "model": "sdp.componente",
+        "pk": 1,
+        "fields": {
+            "nome": "Pe",
+            "tag": "PE",
+            "descricao": "Pé"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 2,
+        "fields": {
+            "nome": "Viga",
+            "tag": "VG",
+            "descricao": "Viga"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 3,
+        "fields": {
+            "nome": "Ferro Esticar Lateral",
+            "tag": "FEL",
+            "descricao": "Ferro Esticar Lateral"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 4,
+        "fields": {
+            "nome": "Sapata Chão",
+            "tag": "SC",
+            "descricao": "Viga"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 5,
+        "fields": {
+            "nome": "Cortineiro",
+            "tag": "CO",
+            "descricao": "Cortineiro"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 6,
+        "fields": {
+            "nome": "Central",
+            "tag": "CE",
+            "descricao": "Central"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 7,
+        "fields": {
+            "nome": "Finas",
+            "tag": "FI",
+            "descricao": "Finas"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 8,
+        "fields": {
+            "nome": "Prumo",
+            "tag": "PR",
+            "descricao": "Prumo"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 9,
+        "fields": {
+            "nome": "Cabeça",
+            "tag": "CA",
+            "descricao": "Cabeça"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 10,
+        "fields": {
+            "nome": "Aumento Prumo Topo",
+            "tag": "APT",
+            "descricao": "Aumento Prumo Topo"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 11,
+        "fields": {
+            "nome": "Diagonais",
+            "tag": "DG",
+            "descricao": "Diagonais"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 11,
+        "fields": {
+            "nome": "Reguas Esticar Cobertura",
+            "tag": "REC",
+            "descricao": "Reguas Esticar Cobertura"
+        }
+    }
+]

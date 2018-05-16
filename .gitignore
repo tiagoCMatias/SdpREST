@@ -115,9 +115,10 @@ coverage
 
 # vim tmp files
 *.swp
-#prehab/prod_env.py
-prehab/settings/prod_env.py
-prehab/settings/production.py
+#SdpREST/prod_env.py
+SdpREST/settings/prod_env.py
+SdpREST/settings/production.py
+.migrations/
 
 #SQL
 *.sqlite3

@@ -1,0 +1,10 @@
+[
+    {
+        "model": "sdp.cliente",
+        "pk": 1,
+        "fields": {
+            "nome": "ClienteTeste",
+            "descricao": "Cliente para testes"
+        }
+    }
+]

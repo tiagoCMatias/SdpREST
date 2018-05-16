@@ -1,4 +1,4 @@
-from sdp.models.componentes.Pe.pe import Pe
+from sdp.models.estrutura.componentes.Pe.pe import Pe
 from rest_framework import viewsets
 from sdp.serializers.componentes.pe import PeSerializer
 

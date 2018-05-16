@@ -8,7 +8,7 @@ from sdp.serializers.tipoTenda import TipoTendaSerializer
 class TipoTendasViewSet(GenericViewSet):
     def list(self, request):
         try:
-            print(TipoTenda.objects.all())
+            #print(TipoTenda.objects.all())
             tipoTenda = self.paginate_queryset(TipoTenda.objects.all())
             #queryset = self.paginate_queryset(tipoTenda)
 

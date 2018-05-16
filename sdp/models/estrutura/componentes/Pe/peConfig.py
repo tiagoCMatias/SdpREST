@@ -1,7 +1,7 @@
 from django.db import models
 
 from sdp.models.configTenda import ConfigTenda
-from sdp.models.componentes.Pe.pe import Pe
+from sdp.models.estrutura.componentes.Pe.pe import Pe
 
 
 class peConfigQuerySet(models.QuerySet):
@@ -10,7 +10,7 @@ class peConfigQuerySet(models.QuerySet):
 
 class peConfig(models.Model):
     id = models.AutoField(primary_key=True)
-    pe = models.OneToOneField(Pe, on_delete=models.CASCADE, db_column='pe_id', primary_key=True)
+    pe = models.ForeignKey(Pe, on_delete=models.CASCADE, db_column='pe_id')
     tipoConfig = models.ForeignKey(ConfigTenda, on_delete=models.CASCADE, db_column='configTenda_id')
 
     objects = peConfigQuerySet.as_manager()

@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from sdp.models.componentes.Viga.viga import Viga
+from sdp.models.estrutura.componentes.Viga.viga import Viga
 
 class VigaSerializer(serializers.ModelSerializer):
     class Meta:
