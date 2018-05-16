@@ -117,9 +117,10 @@ coverage
 *.swp
 #SdpREST/prod_env.py
 SdpREST/settings/prod_env.py
-SdpREST/settings/production.py
-.migrations/
+SdpREST/settings/dev.py
 
+.migrations/
+migrations/
 #SQL
 *.sqlite3
 
