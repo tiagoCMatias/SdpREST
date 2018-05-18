@@ -1,0 +1,42 @@
+{
+    "type": "object",
+    "properties": {
+        "nome": {
+            "type": [
+                "string"
+            ]
+        },
+        "tag": {
+            "type": [
+                "string"
+            ]
+        },
+        "descricao":{
+            "type": [
+              "string"
+            ]
+        },
+        "familia":{
+            "type": [
+              "number"
+            ]
+        },
+        "quantidade":{
+            "type": [
+              "number"
+            ]
+        },
+        "tenda": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        }
+    },
+    "required": [
+        "nome",
+        "descricao",
+        "tenda",
+        "familia"
+    ]
+}

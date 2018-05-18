@@ -1,9 +1,8 @@
 from rest_framework.viewsets import GenericViewSet
 from SdpREST.helpers.HttpException import HttpException
 from SdpREST.helpers.HttpResponseHandler import HTTP
-from SdpREST.helpers.SchemaValidator import SchemaValidator
-from sdp.models import tipoTendas as TipoTenda
-from sdp.serializers.tipoTenda import TipoTendaSerializer
+from sdp.models.tendas import tipoTendas as TipoTenda
+from sdp.serializers.tendas.tipoTenda import TipoTendaSerializer
 
 class TipoTendasViewSet(GenericViewSet):
     def list(self, request):

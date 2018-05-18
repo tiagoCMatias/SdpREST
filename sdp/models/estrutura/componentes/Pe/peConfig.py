@@ -1,6 +1,6 @@
 from django.db import models
 
-from sdp.models.configTenda import ConfigTenda
+from sdp.models.tendas.configTenda import ConfigTenda
 from sdp.models.estrutura.componentes.Pe.pe import Pe
 
 

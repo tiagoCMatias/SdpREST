@@ -1,0 +1,110 @@
+[
+    {
+        "model": "sdp.familiaComponentes",
+        "pk": 1,
+        "fields": {
+            "nome": "Viga",
+            "descricao": "Viga",
+            "tag": "E.V"
+        }
+    },
+    {
+        "model": "sdp.familiaComponentes",
+        "pk": 2,
+        "fields": {
+            "nome": "Pé",
+            "descricao": "Pé",
+            "tag": "E.Pe"
+        }
+    },
+    {
+        "model": "sdp.familiaComponentes",
+        "pk": 3,
+        "fields": {
+            "nome": "Ferro Esticar Lateral",
+            "descricao": "Ferro Esticar Lateral",
+            "tag": "E.FEL"
+        }
+    },
+    {
+        "model": "sdp.familiaComponentes",
+        "pk": 4,
+        "fields": {
+            "nome": "Cortineiro",
+            "descricao": "Cortineiro",
+            "tag": "E.Cn"
+        }
+    },
+    {
+        "model": "sdp.familiaComponentes",
+        "pk": 5,
+        "fields": {
+            "nome": "Sapata Chão",
+            "descricao": "Sapata Chão",
+            "tag": "E.SC"
+        }
+    },
+    {
+        "model": "sdp.familiaComponentes",
+        "pk": 6,
+        "fields": {
+            "nome": "Central",
+            "descricao": "Central",
+            "tag": "E.Ct"
+        }
+    },
+    {
+        "model": "sdp.familiaComponentes",
+        "pk": 7,
+        "fields": {
+            "nome": "Finas",
+            "descricao": "Finas",
+            "tag": "E.F"
+        }
+    },
+    {
+        "model": "sdp.familiaComponentes",
+        "pk": 8,
+        "fields": {
+            "nome": "Cabeça",
+            "descricao": "Cabeça",
+            "tag": "E.C"
+        }
+    },
+    {
+        "model": "sdp.familiaComponentes",
+        "pk": 9,
+        "fields": {
+            "nome": "Prumo",
+            "descricao": "Prumo",
+            "tag": "E.P"
+        }
+    },
+    {
+        "model": "sdp.familiaComponentes",
+        "pk": 10,
+        "fields": {
+            "nome": "Aumento Prumo Topo",
+            "descricao": "Aumento Prumo Topo",
+            "tag": "E.APT"
+        }
+    },
+    {
+        "model": "sdp.familiaComponentes",
+        "pk": 11,
+        "fields": {
+            "nome": "Régua Esticar Cobertura",
+            "descricao": "Régua Esticar Cobertura",
+            "tag": "E.REC"
+        }
+    },
+    {
+        "model": "sdp.familiaComponentes",
+        "pk": 12,
+        "fields": {
+            "nome": "Diagonais",
+            "descricao": "Diagonais",
+            "tag": "DE"
+        }
+    }
+]

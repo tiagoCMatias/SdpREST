@@ -1,5 +1,5 @@
 from django.db import models
-from sdp.models.tipoTendas import TipoTenda
+from sdp.models.tendas.tipoTendas import TipoTenda
 
 class ConfigTendaQuerySet(models.QuerySet):
     pass

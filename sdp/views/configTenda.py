@@ -1,6 +1,6 @@
-from sdp.models.configTenda import ConfigTenda
+from sdp.models.tendas.configTenda import ConfigTenda
 from rest_framework import viewsets
-from sdp.serializers.configTenda import ConfigTendaSerializer
+from sdp.serializers.tendas.configTenda import ConfigTendaSerializer
 
 class ConfigTendaViewSet(viewsets.ModelViewSet):
     """
