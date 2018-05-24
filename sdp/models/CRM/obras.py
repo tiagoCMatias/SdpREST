@@ -1,6 +1,7 @@
-from datetime import datetime
+import datetime
 from django.db import models
 from sdp.models.CRM.cliente import Cliente
+
 
 class ObrasQuerySet(models.QuerySet):
     def get_all_objects(self):
@@ -9,7 +10,7 @@ class ObrasQuerySet(models.QuerySet):
 
 class Obras(models.Model):
     id = models.AutoField(primary_key=True)
-    date = models.DateTimeField(default=datetime.now, blank=True)
+    date = models.DateField(default=datetime.date.today(), blank=True)
     local = models.CharField(max_length=64, blank=False, null=True)
     cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE, db_column='cliente_id')
 
