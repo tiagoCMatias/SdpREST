@@ -22,3 +22,5 @@ class userTests(TestSuit):
         # Test Delete
         res = self.http_request('delete', self.url_path)
         self.assertEqual(res.status_code, 405)
+
+
