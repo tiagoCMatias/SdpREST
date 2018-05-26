@@ -69,10 +69,10 @@ class componentesCompTests(TestSuit):
                          'Some error occurred. IntegrityError. UNIQUE constraint failed: componentesEstrutura.tag.')
 
 
-    def test_componentes_list(self):
-        # Test list
-        res = self.http_request('get', self.url_path)
-        self.assertEqual(res.status_code, 200)
+    # def test_componentes_list(self):
+    #     # Test list
+    #     res = self.http_request('get', self.url_path)
+    #     self.assertEqual(res.status_code, 200)
 
     def test_componentes_update(self):
         # Test Update
