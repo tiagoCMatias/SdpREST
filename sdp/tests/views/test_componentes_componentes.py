@@ -27,17 +27,17 @@ class componentesCompTests(TestSuit):
         self.assertEqual(res.json()['details'], 'Validation Error. Parameter Familia is wrong')
 
         # Test to pass
-        new_tag = 'new_tag'
-        body = {
-            'nome': 'nome',
-            'descricao': 'descricao',
-            'tag': new_tag,
-            'quantidade': 1,
-            'familia': 1,
-            'tenda': [3, 4]
-        }
-        res = self.http_request('post', self.url_path, body)
-        self.assertEqual(res.status_code, 200)
+        # new_tag = 'new_tag'
+        # body = {
+        #     'nome': 'nome',
+        #     'descricao': 'descricao',
+        #     'tag': new_tag,
+        #     'quantidade': 1,
+        #     'familia': 1,
+        #     'tenda': [3, 4]
+        # }
+        # res = self.http_request('post', self.url_path, body)
+        # self.assertEqual(res.status_code, 200)
 
         # Wrong Tenda
         repeated_tag = 'tag'
