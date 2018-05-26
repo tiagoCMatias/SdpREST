@@ -1,25 +1,23 @@
 from rest_framework.viewsets import GenericViewSet
 from SdpREST.helpers.HttpException import HttpException
 from SdpREST.helpers.HttpResponseHandler import HTTP
-from sdp.models.tendas import tipoTendas as TipoTenda
+from sdp.models.tendas.tipoTendas import TipoTenda
 from sdp.serializers.tendas.tipoTenda import TipoTendaSerializer
 
 class TipoTendasViewSet(GenericViewSet):
-    def list(self, request):
+
+    @staticmethod
+    def list(self):
         try:
-            #print(TipoTenda.objects.all())
-            tipoTenda = self.paginate_queryset(TipoTenda.objects.all())
-            #queryset = self.paginate_queryset(tipoTenda)
+            queryset = TipoTenda.objects.all()
+            data = TipoTendaSerializer(queryset, many=True).to_representation(queryset)
 
         except HttpException as e:
             return HTTP.response(e.http_code, e.http_detail)
         except Exception as e:
-            print(e)
             return HTTP.response(400, 'Some error occurred. {}. {}.'.format(type(e).__name__, str(e)))
 
-        data = TipoTendaSerializer(tipoTenda, many=True).data
-
-        return HTTP.response(200, '', data=data, paginator=self.paginator)
+        return HTTP.response(200, 'Tipo de Tendas', data)
 
     @staticmethod
     def create(request):

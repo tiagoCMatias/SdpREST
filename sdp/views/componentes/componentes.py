@@ -14,7 +14,7 @@ from collections import OrderedDict
 import json
 
 
-class ComponentesViewModel(viewsets.ModelViewSet):
+class ComponentesViewModel(viewsets.GenericViewSet):
 
     @staticmethod
     def list(self):
@@ -54,7 +54,7 @@ class ComponentesViewModel(viewsets.ModelViewSet):
 
             # 2. Validate
             if (FamiliaComponentes.objects.familia_exist(data['familia']) == False):
-                return HTTP.response(400, 'Wrong Family')
+                return HTTP.response(400, 'Validation Error. Parameter Familia is wrong')
 
             familia = FamiliaComponentes.objects.get(pk=data['familia'])
             genCodigo = Componente.objects.count_familia(data['familia']) + 1
@@ -78,8 +78,8 @@ class ComponentesViewModel(viewsets.ModelViewSet):
                     componente=novoComponente,
                     tenda=tipoTenda
                 ))
-
             ListaDeComponentes.objects.bulk_create(lista_de_components_to_save)
+
 
         except HttpException as e:
             return HTTP.response(e.http_code, e.http_detail)
@@ -87,3 +87,12 @@ class ComponentesViewModel(viewsets.ModelViewSet):
             return HTTP.response(400, 'Some error occurred. {}. {}.'.format(type(e).__name__, str(e)))
 
         return HTTP.response(200, 'Novo Componente Registado')
+
+    @staticmethod
+    def update(request, pk=None):
+        return HTTP.response(405, '')
+
+    @staticmethod
+    def destroy(request, pk=None):
+        return HTTP.response(405, '')
+

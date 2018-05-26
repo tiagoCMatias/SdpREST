@@ -7,7 +7,7 @@ from SdpREST.helpers.HttpResponseHandler import HTTP
 from SdpREST.helpers.SchemaValidator import SchemaValidator
 
 
-class ClienteViewModel(viewsets.ModelViewSet):
+class ClienteViewModel(viewsets.GenericViewSet):
 
     @staticmethod
     def list(self):
@@ -20,3 +20,15 @@ class ClienteViewModel(viewsets.ModelViewSet):
             return HTTP.response(400, 'Some error occurred. {}. {}.'.format(type(e).__name__, str(e)))
 
         return HTTP.response(200, 'Lista de Clientes' ,data)
+
+    @staticmethod
+    def create(request):
+        return HTTP.response(405, '')
+
+    @staticmethod
+    def update(request, pk=None):
+        return HTTP.response(405, '')
+
+    @staticmethod
+    def destroy(request, pk=None):
+        return HTTP.response(405, '')

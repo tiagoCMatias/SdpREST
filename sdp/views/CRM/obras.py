@@ -37,9 +37,17 @@ class ObrasViewModel(GenericViewSet):
             # Check if Cliente exists
             cliente = Cliente.objects.match_cliente(nome=data['cliente'])
 
+            dataObra = data['data']
+
+            #Check Valid date
+            try:
+                datetime.strptime(dataObra, '%Y-%m-%d')
+            except Exception:
+                return HTTP.response(405, "Incorrect data format, should be YYYY-MM-DD")
+
             if cliente:
                 novaObra = Obras(
-                    date=datetime.strptime(data['data'], '%Y-%m-%d'),
+                    date=dataObra,
                     cliente=cliente,
                     local=data['local']
                 )

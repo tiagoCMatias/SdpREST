@@ -6,7 +6,7 @@ from SdpREST.helpers.HttpException import HttpException
 from SdpREST.helpers.HttpResponseHandler import HTTP
 from SdpREST.helpers.SchemaValidator import SchemaValidator
 
-class ConfigTendaViewSet(viewsets.ModelViewSet):
+class ConfigTendaViewSet(viewsets.GenericViewSet):
 
     def list(self, request):
         try:
@@ -19,3 +19,15 @@ class ConfigTendaViewSet(viewsets.ModelViewSet):
             return HTTP.response(400, 'Some error occurred. {}. {}.'.format(type(e).__name__, str(e)))
 
         return HTTP.response(200, 'Configurações de Tendas' ,data)
+
+    @staticmethod
+    def create(request):
+        return HTTP.response(405, '')
+
+    @staticmethod
+    def update(request, pk=None):
+        return HTTP.response(405, '')
+
+    @staticmethod
+    def destroy(request, pk=None):
+        return HTTP.response(405, '')

@@ -1,0 +1,21 @@
+language: python
+python:
+- "3.6"
+
+# setup environment
+env:
+- DJANGO_VERSION=2.0.2
+
+# install dependencies
+install:
+- pip install -r requirements.txt
+
+# run test scripts
+script:
+- coverage run --source=. --omit '*__init__*,*wsgi*,*manage*,*test*,*environment.py*,*settings/*,*sdp/apps*,*sdp/urls*,*prehab/fixtures*,*prehab/urls*,prehab/permissions.py' manage.py test sdp --noinput --settings=SdpREST.settings.dev
+
+# run coveralls after successful tests
+after_success:
+- coveralls
+
+
