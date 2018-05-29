@@ -1,4 +1,4 @@
-import os.path
+#import os.path
 
 ENVIRONMENT = 'local'
 #ENVIRONMENT = 'development'

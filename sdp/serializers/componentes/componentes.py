@@ -1,8 +1,8 @@
 from rest_framework import serializers
 
 from sdp.models.estrutura.componentes.componente import Componente
-from sdp.serializers.componentes.familiaComponente import FamiliaComponentesSerializer
-from sdp.serializers.componentes.listaComponentes import ListaDeComponentesSerializer, FullListaDeComponentesSerializer
+#from sdp.serializers.componentes.familiaComponente import FamiliaComponentesSerializer
+from sdp.serializers.componentes.listaComponentes import FullListaDeComponentesSerializer
 
 
 class ComponentesSerializer(serializers.ModelSerializer):

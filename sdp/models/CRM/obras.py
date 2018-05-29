@@ -1,4 +1,3 @@
-import datetime
 from django.db import models
 from sdp.models.CRM.cliente import Cliente
 from django.utils import timezone

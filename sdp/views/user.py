@@ -1,4 +1,3 @@
-from rest_framework.decorators import list_route
 from rest_framework.viewsets import GenericViewSet
 from SdpREST.helpers.HttpResponseHandler import HTTP
 

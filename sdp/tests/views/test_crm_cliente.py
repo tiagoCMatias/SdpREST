@@ -1,6 +1,3 @@
-from sdp.models.CRM.cliente import Cliente
-from django.test import TestCase
-from SdpREST.helpers.HttpException import HttpException
 from sdp.tests.TestSuite import TestSuit
 
 

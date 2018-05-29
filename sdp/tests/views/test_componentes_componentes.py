@@ -1,5 +1,4 @@
 from sdp.tests.TestSuite import TestSuit
-from django.db import transaction
 
 
 class componentesCompTests(TestSuit):

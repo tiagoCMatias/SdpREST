@@ -4,7 +4,7 @@ from rest_framework import viewsets
 from sdp.serializers.componentes.familiaComponente import FamiliaComponentesSerializer
 from SdpREST.helpers.HttpException import HttpException
 from SdpREST.helpers.HttpResponseHandler import HTTP
-from SdpREST.helpers.SchemaValidator import SchemaValidator
+#from SdpREST.helpers.SchemaValidator import SchemaValidator
 
 
 class FamiliaComponentesViewModel(viewsets.GenericViewSet):

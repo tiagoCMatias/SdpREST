@@ -4,14 +4,11 @@ from sdp.models.estrutura.componentes.familiaComponentes import FamiliaComponent
 from sdp.models.tendas.configTenda import ConfigTenda
 from sdp.models.estrutura.listaComponentes import ListaDeComponentes
 from rest_framework import viewsets
-from sdp.serializers.componentes.componentes import ComponentesSerializer, FullComponentesSerializer
-from sdp.serializers.componentes.listaComponentes import ListaDeComponentesSerializer
+from sdp.serializers.componentes.componentes import FullComponentesSerializer
 from SdpREST.helpers.HttpException import HttpException
 from SdpREST.helpers.HttpResponseHandler import HTTP
 from SdpREST.helpers.SchemaValidator import SchemaValidator
 
-from collections import OrderedDict
-import json
 
 class ComponentesViewModel(viewsets.GenericViewSet):
 
@@ -20,22 +17,6 @@ class ComponentesViewModel(viewsets.GenericViewSet):
         try:
             queryset = Componente.objects.all()
             data = FullComponentesSerializer(queryset, many=True).to_representation(queryset)
-
-            # data = []
-            #
-            # for component in components:
-            #     queryset = ListaDeComponentes.objects.filter(componente=component['id']).all()
-            #     pertence = ListaDeComponentesSerializer(queryset, many=True).to_representation(queryset)
-            #
-            #     data.append({
-            #         'id': component['id'],
-            #         'nome': component['nome'],
-            #         'descricao': component['descricao'],
-            #         'quantidade': component['quantidade'],
-            #         'genCodigo': component['genCodigo'],
-            #         'familia': component['familia'],
-            #         'pertence': pertence
-            #     })
 
         except HttpException as e:
             return HTTP.response(e.http_code, e.http_detail)
