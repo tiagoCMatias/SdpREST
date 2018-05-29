@@ -4,15 +4,15 @@ from sdp.models.estrutura.listaComponentes import ListaDeComponentes
 from sdp.serializers.tendas.configTenda import ConfigTendaSerializer
 
 
-class ListaDeComponentesSerializer(serializers.ModelSerializer):
-
-    def to_representation(self, obj):
-        data = super(ListaDeComponentesSerializer, self).to_representation(obj)  # the original data
-        return data
-
-    class Meta:
-        model = ListaDeComponentes
-        fields = ('componente', 'tenda')
+# class ListaDeComponentesSerializer(serializers.ModelSerializer):
+#
+#     def to_representation(self, obj):
+#         data = super(ListaDeComponentesSerializer, self).to_representation(obj)  # the original data
+#         return data
+#
+#     class Meta:
+#         model = ListaDeComponentes
+#         fields = ('componente', 'tenda')
 
 
 class FullListaDeComponentesSerializer(serializers.ModelSerializer):

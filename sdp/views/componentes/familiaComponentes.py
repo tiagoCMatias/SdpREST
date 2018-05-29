@@ -23,12 +23,12 @@ class FamiliaComponentesViewModel(viewsets.GenericViewSet):
 
     @staticmethod
     def create(request):
-        return HTTP.response(405, '')
+        return HTTP.response(405, details='No Access')
 
     @staticmethod
     def update(request, pk=None):
-        return HTTP.response(405, '')
+        return HTTP.response(405, details='No Access')
 
     @staticmethod
     def destroy(request, pk=None):
-        return HTTP.response(405, '')
+        return HTTP.response(405, details='No Access')

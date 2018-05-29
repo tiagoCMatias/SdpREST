@@ -6,7 +6,7 @@ class componentesFamiliaTests(TestSuit):
 
     def test_familia_create(self):
         # Test Create
-        res = self.http_request('post', self.url_path)
+        res = self.http_request('post', self.url_path + "1/")
         self.assertEqual(res.status_code, 405)
 
     def test_familia_list(self):
@@ -16,10 +16,10 @@ class componentesFamiliaTests(TestSuit):
 
     def test_familia_update(self):
         # Test Update
-        res = self.http_request('put', self.url_path )
+        res = self.http_request('put', self.url_path + "1/")
         self.assertEqual(res.status_code, 405)
 
     def test_familia_delete(self):
         # Test Delete
-        res = self.http_request('delete', self.url_path)
-        self.assertEqual(res.status_code, 405)
+        res = self.http_request('delete', self.url_path + "1/")
+        self.assertEqual(res.status_code, 405 )
