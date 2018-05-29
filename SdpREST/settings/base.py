@@ -71,6 +71,8 @@ CORS_ALLOW_HEADERS = (
     'content-disposition',
     'platform'
 )
+
+
 CORS_ALLOW_METHODS = (
     'DELETE',
     'GET',

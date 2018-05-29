@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "properties": {
+        "nome": {
+            "type": [
+                "string"
+            ]
+        },
+        "descricao":{
+            "type": [
+              "string"
+            ]
+        },
+        "familia":{
+            "type": [
+              "number"
+            ]
+        },
+        "quantidade":{
+            "type": [
+              "number"
+            ]
+        }
+    },
+    "required": [
+        "nome",
+        "descricao",
+        "quantidade",
+        "familia"
+    ]
+}

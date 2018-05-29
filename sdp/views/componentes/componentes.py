@@ -13,7 +13,6 @@ from SdpREST.helpers.SchemaValidator import SchemaValidator
 from collections import OrderedDict
 import json
 
-
 class ComponentesViewModel(viewsets.GenericViewSet):
 
     @staticmethod
@@ -90,7 +89,30 @@ class ComponentesViewModel(viewsets.GenericViewSet):
 
     @staticmethod
     def update(request, pk=None):
-        return HTTP.response(405, '')
+        try:
+
+            updateComponente = request.data
+            # 1. Check schema
+            SchemaValidator.validate_obj_structure(updateComponente, 'componentes/updateComponente.json')
+
+            myComponente = Componente.objects.get(pk=pk)
+
+            if updateComponente['familia']:
+                familia = FamiliaComponentes.objects.get(pk=updateComponente['familia'])
+                myComponente.familia = familia
+
+            myComponente.nome = updateComponente['nome'] if 'nome' in updateComponente else myComponente.nome
+            myComponente.descricao = updateComponente['descricao'] if 'descricao' in updateComponente else myComponente.descricao
+            myComponente.quantidade = updateComponente['quantidade'] if 'quantidade' in updateComponente else myComponente.quantidade
+
+            myComponente.save()
+
+        except HttpException as e:
+            return HTTP.response(e.http_code, e.http_detail)
+        except Exception as e:
+            return HTTP.response(400, 'Some error occurred. {}. {}.'.format(type(e).__name__, str(e)))
+
+        return HTTP.response(200, 'Update Success')
 
     @staticmethod
     def destroy(request, pk=None):
