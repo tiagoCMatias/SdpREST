@@ -16,6 +16,6 @@ script:
 
 # run coveralls after successful tests
 after_success:
-- coveralls
+- codecov
 
 
