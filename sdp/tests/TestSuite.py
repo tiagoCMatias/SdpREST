@@ -8,20 +8,13 @@ class TestSuit(TestCase):
     fixtures = (
         '1tipoTendas.json',
         '2configTendas.json',
-        '3familiaComponentes.json'
+        '3familiaComponentes.json',
+        '4userLevels.json'
     )
 
     def setUp(self):
         self.client = Client()
         #self.admin_jwt = self.get_jwt_from_login('admin', 'admin', platform='web')
-
-        # Set Fixtures
-        url_tipos = '/api/tendas/tipos/'
-        url_config = '/api/tendas/config/'
-        url_familia = 'api/componentes/familia/'
-        self.http_request('post', url_tipos, '1tipoTendas.json')
-        self.http_request('post', url_config, '2configTendas.json')
-        self.http_request('post', url_familia, '3familiaComponentes.json')
 
     def get_jwt_from_login(self, username, password, platform='web'):
         headers = {'HTTP_PLATFORM': platform}

@@ -1,0 +1,26 @@
+[
+    {
+        "model": "sdp.userLevel",
+        "pk": 1,
+        "fields": {
+            "title": "Admin",
+            "description": "Admin Privilege"
+        }
+    },
+    {
+        "model": "sdp.userLevel",
+        "pk": 2,
+        "fields": {
+            "title": "Normal",
+            "description": "Normal User"
+        }
+    },
+    {
+        "model": "sdp.userLevel",
+        "pk": 3,
+        "fields": {
+            "title": "Viewer",
+            "description": "Viewer User. Can't perform DB Edits"
+        }
+    }
+]

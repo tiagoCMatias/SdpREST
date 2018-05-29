@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.hashers import make_password, check_password
+from sdp.models.userLevel import UserLevel
 
 
 class UserQuerySet(models.QuerySet):
@@ -9,10 +9,12 @@ class UserQuerySet(models.QuerySet):
 
 class User(models.Model):
     id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=64, blank=False, null=True)
     email = models.CharField(max_length=64, blank=False, null=True, unique=True)
     username = models.CharField(max_length=64, blank=False, null=False)
     password = models.CharField(max_length=64, blank=False, null=True)
+    level = models.ForeignKey(UserLevel, on_delete=models.CASCADE, db_column='level_id', related_name='level')
+    added = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
 
     objects = UserQuerySet.as_manager()
 
@@ -22,3 +24,15 @@ class User(models.Model):
 
     def __str__(self):
         return self.name
+
+    @property
+    def is_admin(self):
+        return self.level.title == 'Admin'
+
+    @property
+    def is_normal(self):
+        return self.level.title == 'Normal'
+
+    @property
+    def is_viewer(self):
+        return self.level.title == 'Viewer'
