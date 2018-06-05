@@ -22,7 +22,7 @@ class UserViewSet(GenericViewSet):
                 email=data['email'] if 'email' in data else None,
                 username=data['username'] if 'username' in data else None,
                 level=UserLevel.objects.normal_level().get(),
-                password=bcrypt.hashpw(data['password'].encode('utf-8'), bcrypt.gensalt())
+                password=str(bcrypt.hashpw(request.data['password'].encode('utf8'), bcrypt.gensalt()), 'utf8'),
             )
             user.save()
 

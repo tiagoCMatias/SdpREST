@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #'SdpREST.middleware.SdpMiddleware.SdpMiddleware'
 ]
 
 ROOT_URLCONF = 'SdpREST.urls'
