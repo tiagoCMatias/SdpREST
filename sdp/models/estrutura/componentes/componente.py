@@ -12,10 +12,10 @@ class ComponenteQuerySet(models.QuerySet):
 class Componente(models.Model):
     id = models.AutoField(primary_key=True)
     nome = models.CharField(max_length=128, blank=False, null=True)
-    peso = models.IntegerField(blank=False, null=False, default=0)
+    peso = models.IntegerField(blank=False, null=True, default=0)
     descricao = models.CharField(max_length=512, blank=False, null=True)
     familia = models.ForeignKey(FamiliaComponentes, on_delete=models.CASCADE, db_column='familiaComponente_id')
-    quantidade = models.IntegerField(blank=False, null=False, default=0)
+    quantidade = models.IntegerField(blank=False, null=True, default=0)
     genCodigo = models.CharField(max_length=32, blank=False, null=True, unique=True)
 
     objects = ComponenteQuerySet.as_manager()
