@@ -52,9 +52,6 @@ class componentesCompTests(TestSuit):
         res = self.http_request('post', self.url_path, body)
         self.assertEqual(res.status_code, 200)
 
-
-
-
     def test_componentes_list(self):
         # Test list
         res = self.http_request('get', self.url_path)
