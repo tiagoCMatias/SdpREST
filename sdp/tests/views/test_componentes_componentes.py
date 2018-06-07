@@ -16,7 +16,7 @@ class componentesCompTests(TestSuit):
         body = {
             'nome': 'nome',
             'descricao': 'descricao',
-            #'peso': 20,
+            'peso': 20,
             'quantidade': 1,
             'familia': 99,
             'tenda': [1, 2]
@@ -30,7 +30,7 @@ class componentesCompTests(TestSuit):
         body = {
             'nome': 'nome',
             'descricao': 'descricao',
-            #'peso': 20,
+            'peso': 20,
             'quantidade': 1,
             'familia': 1,
             'tenda': [98, 99]
@@ -44,7 +44,7 @@ class componentesCompTests(TestSuit):
         body = {
             'nome': 'nome',
             'descricao': 'descricao',
-            #'peso': 20,
+            'peso': 20,
             'quantidade': 1,
             'familia': 1,
             'tenda': [3, 4]
