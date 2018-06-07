@@ -44,7 +44,7 @@ class ComponentesViewModel(viewsets.GenericViewSet):
             novoComponente = Componente(
                 nome=data['nome'] if 'nome' in data else None,
                 descricao=data['descricao'] if 'descricao' in data else None,
-                tag=data['tag'] if 'tag' in data else None,
+                peso=data['peso'] if 'peso' in data else None,
                 quantidade=data['quantidade'] if 'quantidade' in data else None,
                 familia=familia,
                 genCodigo=genCodigo

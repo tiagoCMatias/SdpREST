@@ -16,7 +16,7 @@ class componentesCompTests(TestSuit):
         body = {
             'nome': 'nome',
             'descricao': 'descricao',
-            'tag': 'tag',
+            'peso': 20,
             'quantidade': 1,
             'familia': 99,
             'tenda': [1, 2]
@@ -25,25 +25,12 @@ class componentesCompTests(TestSuit):
         self.assertEqual(res.status_code, 400)
         self.assertEqual(res.json()['details'], 'Validation Error. Parameter Familia is wrong')
 
-        #Test to pass
-        new_tag = 'new_tag'
-        body = {
-            'nome': 'nome',
-            'descricao': 'descricao',
-            'tag': new_tag,
-            'quantidade': 1,
-            'familia': 1,
-            'tenda': [3, 4]
-        }
-        res = self.http_request('post', self.url_path, body)
-        self.assertEqual(res.status_code, 200)
-
         # Wrong Tenda
         repeated_tag = 'tag'
         body = {
             'nome': 'nome',
             'descricao': 'descricao',
-            'tag': repeated_tag,
+            'peso': 20,
             'quantidade': 1,
             'familia': 1,
             'tenda': [98, 99]
@@ -53,19 +40,19 @@ class componentesCompTests(TestSuit):
         self.assertEqual(res.json()['details'],
                          'Some error occurred. DoesNotExist. ConfigTenda matching query does not exist..')
 
-        # Test to repeated tag
+        #Test to pass
         body = {
             'nome': 'nome',
             'descricao': 'descricao',
-            'tag': repeated_tag,
+            'peso': 20,
             'quantidade': 1,
             'familia': 1,
-            'tenda': [99, 98]
+            'tenda': [3, 4]
         }
         res = self.http_request('post', self.url_path, body)
-        self.assertEqual(res.status_code, 400)
-        self.assertEqual(res.json()['details'],
-                         'Some error occurred. IntegrityError. UNIQUE constraint failed: componentesEstrutura.tag.')
+        self.assertEqual(res.status_code, 200)
+
+
 
 
     def test_componentes_list(self):

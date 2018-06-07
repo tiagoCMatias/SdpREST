@@ -6,9 +6,9 @@
                 "string"
             ]
         },
-        "tag": {
+        "peso": {
             "type": [
-                "string"
+                "number"
             ]
         },
         "descricao":{
