@@ -11,7 +11,7 @@ class UserQuerySet(models.QuerySet):
 class User(models.Model):
     id = models.AutoField(primary_key=True)
     email = models.CharField(max_length=64, blank=False, null=True, unique=True)
-    username = models.CharField(max_length=64, blank=False, null=True)
+    username = models.CharField(max_length=64, blank=False, null=True, unique=True)
     password = models.CharField(max_length=64, blank=False, null=True)
     level = models.ForeignKey(UserLevel, on_delete=models.CASCADE, db_column='level_id', related_name='level')
     #added = models.DateTimeField(auto_now_add=True, blank=True)

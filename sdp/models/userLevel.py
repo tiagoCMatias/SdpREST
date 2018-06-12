@@ -2,7 +2,7 @@ from django.db import models
 
 
 class userLevelQuerySet(models.QuerySet):
-    def which_role(self, role_id):
+    def which_level(self, role_id):
         return self.filter(pk=role_id)
 
     def admin_level(self):

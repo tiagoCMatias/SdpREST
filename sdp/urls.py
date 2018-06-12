@@ -26,5 +26,6 @@ router.register(r'componentes/lista', ComponentesViewModel, 'crud-comp')
 
 urlpatterns = [
     url(r'login/', AuthViewSet.as_view({'post': 'login'}), name='login'),
+    url(r'verify/', AuthViewSet.as_view({'post': 'verify'}), name='verify'),
     path('', include(router.urls)),
 ]

@@ -48,10 +48,43 @@ class userTests(TestSuit):
         res = self.http_request('get', self.url_path)
         self.assertEqual(res.status_code, 405)
 
-    def test_user_cliente(self):
+    def test_user_update(self):
         # Test Update
-        res = self.http_request('put', self.url_path + "1/")
-        self.assertEqual(res.status_code, 405)
+        # Empty Schema
+        body = {}
+        res = self.http_request('put', self.url_path+ '1/', body, auth_user='admin')
+        self.assertEqual(res.status_code, 400)
+        self.assertEqual(res.json()['details'], 'Validation Error. Parameter username is a required property')
+
+        # test to pass
+        body = {
+            'username': 'admin',
+            'email': 'new@mail.com'
+        }
+        res = self.http_request('put', self.url_path + "1/", body, auth_user='admin')
+        self.assertEqual(res.status_code, 200)
+        self.assertEqual(res.json()['details'], 'Utilizador actualizado')
+
+        #Cant repeat usernames
+        body = {
+            'username': 'admin',
+            'email': 'new@mail.com'
+        }
+        res = self.http_request('put', self.url_path + "2/", body, auth_user='normal')
+        self.assertEqual(res.status_code, 400)
+        self.assertEqual(res.json()['details'], 'No Repeated Usernames')
+
+        #No permission
+        body = {
+            'username': 'admin',
+            'email': 'new@mail.com'
+        }
+        res = self.http_request('put', self.url_path + "2/", body, auth_user='admin')
+        self.assertEqual(res.status_code, 400)
+        self.assertEqual(res.json()['details'], 'No permissions')
+
+
+
 
     def test_user_delete(self):
         # Test Delete

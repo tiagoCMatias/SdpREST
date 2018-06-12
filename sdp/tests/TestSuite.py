@@ -27,8 +27,8 @@ class TestSuit(TestCase):
         self.view_user = User.objects.get(pk=3)
 
         self.admin_jwt = self.get_jwt_from_login('admin', 'admin')
-        self.normal_user = self.get_jwt_from_login('normal', 'normal')
-        self.view_user = self.get_jwt_from_login('view', 'view')
+        self.normal_jwt = self.get_jwt_from_login('normal', 'normal')
+        self.view_jwt = self.get_jwt_from_login('view', 'view')
 
     def get_jwt_from_login(self, username, password):
         url = '/api/login/'
@@ -37,18 +37,20 @@ class TestSuit(TestCase):
         return self.client.post(url, json.dumps(body), format='json',
                                 content_type='application/json').json()['data']['jwt']
 
-    def http_request(self, method, url, body=None, auth_user=None, custom_headers=None, platform='web'):
+    def http_request(self, method, url, body=None, auth_user=None, custom_headers=None):
         if not url.endswith('/'):
             url += '/'
 
-        headers = {'HTTP_PLATFORM': platform}
-        #if auth_user in ('admin', 'Admin') or auth_user is None:
-        #    headers = {**headers, 'HTTP_JWT': self.admin_jwt}
-        #elif auth_user in ('normal', 'Normal'):
-        #    headers = {**headers, 'HTTP_JWT': self.doctor_jwt}
+        headers = ''
+        if auth_user in ('admin', 'Admin') or auth_user is None:
+            headers = {'HTTP_JWT': self.admin_jwt}
+        elif auth_user in ('normal', 'Normal'):
+            headers = {'HTTP_JWT': self.normal_jwt}
+        elif auth_user in ('view', 'View', 'Viewer', 'viewer'):
+            headers = {'HTTP_JWT': self.view_jwt}
 
-        #if custom_headers is not None:
-        #    headers = {**headers, **custom_headers}
+        if custom_headers is not None:
+            headers = {**headers, **custom_headers}
 
         if body is None:
             body = dict()

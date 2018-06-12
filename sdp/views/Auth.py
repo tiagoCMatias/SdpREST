@@ -43,3 +43,23 @@ class AuthViewSet(viewsets.ModelViewSet):
         except Exception as e:
             return HTTP.response(400, 'Ocorreu um erro inesperado',
                                  'Unexpected Error. {}. {}.'.format(type(e).__name__, str(e)))
+
+    @staticmethod
+    def verify(request):
+        try:
+            #Check for Schema
+            SchemaValidator.validate_obj_structure(request.data, 'login.json')
+            # 1. Check if pair username-password is correct
+            user = User.objects.filter(username=request.data['username'].lower()).get()
+            if not bcrypt.checkpw(request.data['password'].encode('utf8'), user.password.encode('utf8')):
+                raise HTTP.response(200, details=False)
+
+            return HTTP.response(200, details=True)
+
+        except User.DoesNotExist as e:
+            return HTTP.response(200, details=False)
+        except HttpException as e:
+            return HTTP.response(e.http_code, e.http_detail)
+        except Exception as e:
+            return HTTP.response(400, 'Ocorreu um erro inesperado',
+                                 'Unexpected Error. {}. {}.'.format(type(e).__name__, str(e)))

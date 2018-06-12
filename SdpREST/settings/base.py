@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    #'SdpREST.middleware.SdpMiddleware.SdpMiddleware'
+    'SdpREST.middleware.SdpMiddleware.SdpMiddleware'
 ]
 
 ROOT_URLCONF = 'SdpREST.urls'
@@ -145,7 +145,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 REST_FRAMEWORK = {
-#    'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework.authentication.TokenAuthentication',),
+    'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework.authentication.TokenAuthentication',),
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 100
 }
@@ -153,3 +153,4 @@ REST_FRAMEWORK = {
 FIXTURE_DIRS = (os.path.join(BASE_DIR, 'fixtures'),)
 
 JWT_ALGORITHM = 'HS256'
+PERMISSIONS = False

@@ -4,9 +4,9 @@ from sdp.tests.TestSuite import TestSuit
 
 class LevelTests(TestSuit):
     def test_which_level_queryset(self):
-        queryset = UserLevel.objects.which_role(10000)
+        queryset = UserLevel.objects.which_level(10000)
         self.assertEqual(queryset.count(), 0)
-        queryset = UserLevel.objects.which_role(1)
+        queryset = UserLevel.objects.which_level(1)
         self.assertEquals(queryset.count(), 1)
         self.assertEquals(queryset.get().title, 'Admin')
 
