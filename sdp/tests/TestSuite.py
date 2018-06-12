@@ -26,16 +26,15 @@ class TestSuit(TestCase):
         self.normal_user = User.objects.get(pk=2)
         self.view_user = User.objects.get(pk=3)
 
-        self.admin_jwt = self.get_jwt_from_login(username='admin', password='admin')
-        self.normal_user = self.get_jwt_from_login(username='normal', password='normal')
-        self.view_user = self.get_jwt_from_login(username='view', password='view')
+        self.admin_jwt = self.get_jwt_from_login('admin', 'admin')
+        self.normal_user = self.get_jwt_from_login('normal', 'normal')
+        self.view_user = self.get_jwt_from_login('view', 'view')
 
     def get_jwt_from_login(self, username, password):
-        headers = {'HTTP_PLATFORM': 'web'}
         url = '/api/login/'
         body = {'username': username, 'password': password}
 
-        return self.client.post(url, json.dumps(body), **headers, format='json',
+        return self.client.post(url, json.dumps(body), format='json',
                                 content_type='application/json').json()['data']['jwt']
 
     def http_request(self, method, url, body=None, auth_user=None, custom_headers=None, platform='web'):

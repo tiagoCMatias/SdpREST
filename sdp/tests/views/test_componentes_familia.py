@@ -6,7 +6,7 @@ class componentesFamiliaTests(TestSuit):
 
     def test_familia_create(self):
         # Test Create
-        res = self.http_request('post', self.url_path + "1/")
+        res = self.http_request('post', self.url_path)
         self.assertEqual(res.status_code, 405)
 
     def test_familia_list(self):

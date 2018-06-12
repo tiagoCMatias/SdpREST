@@ -6,7 +6,7 @@ class crmClientTests(TestSuit):
 
     def test_cliente_create(self):
         # Test Create
-        res = self.http_request('post', self.url_path + "1/")
+        res = self.http_request('post', self.url_path)
         self.assertEqual(res.status_code, 405)
 
 
