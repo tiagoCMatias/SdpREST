@@ -23,7 +23,7 @@ class UserLevel(models.Model):
     objects = userLevelQuerySet.as_manager()
 
     class Meta:
-        db_table = 'role'
+        db_table = 'UserLevels'
         ordering = ['-id']
 
     def __str__(self):
