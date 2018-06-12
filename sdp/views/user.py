@@ -19,9 +19,12 @@ class UserViewSet(GenericViewSet):
             # 1.2. Check schema
             SchemaValidator.validate_obj_structure(request.data, 'createUser.json')
             user = User(
-                email=data['email'] if 'email' in data else None,
-                username=data['username'] if 'username' in data else None,
-                level=UserLevel.objects.normal_level().get(),
+                email=data['email'].lower() if 'email' in data else None,
+                username=data['username'].lower() if 'username' in data else None,
+                level=
+                    UserLevel.objects.filter(pk=request.data['level']).get()
+                    if 'level' in data
+                    else UserLevel.objects.viewer_level().get(),
                 password=str(bcrypt.hashpw(request.data['password'].encode('utf8'), bcrypt.gensalt()), 'utf8'),
             )
             user.save()

@@ -15,6 +15,11 @@
             "type": [
                 "string"
             ]
+        },
+        "level": {
+            "type": [
+                "number"
+            ]
         }
     },
     "required": [

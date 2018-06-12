@@ -3,21 +3,35 @@ import json
 from django.test import TestCase, Client
 from rest_framework.test import APIClient
 
+from sdp.models.userLevel import UserLevel
+from sdp.models.user import User
 
 class TestSuit(TestCase):
     fixtures = (
         '1tipoTendas.json',
         '2configTendas.json',
         '3familiaComponentes.json',
-        '4userLevels.json'
+        '4userLevels.json',
+        '5defaultUsers.json'
     )
 
     def setUp(self):
         self.client = Client()
-        #self.admin_jwt = self.get_jwt_from_login('admin', 'admin', platform='web')
 
-    def get_jwt_from_login(self, username, password, platform='web'):
-        headers = {'HTTP_PLATFORM': platform}
+        self.admin_role = UserLevel.objects.get(pk=1)
+        self.normal_role = UserLevel.objects.get(pk=2)
+        self.viewer_role = UserLevel.objects.get(pk=3)
+
+        self.admin_user = User.objects.get(pk=1)
+        self.normal_user = User.objects.get(pk=2)
+        self.view_user = User.objects.get(pk=3)
+
+        self.admin_jwt = self.get_jwt_from_login(username='admin', password='admin')
+        self.normal_user = self.get_jwt_from_login(username='normal', password='normal')
+        self.view_user = self.get_jwt_from_login(username='view', password='view')
+
+    def get_jwt_from_login(self, username, password):
+        headers = {'HTTP_PLATFORM': 'web'}
         url = '/api/login/'
         body = {'username': username, 'password': password}
 

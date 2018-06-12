@@ -1,0 +1,32 @@
+[
+    {
+        "model": "sdp.user",
+        "pk": 1,
+        "fields": {
+            "username": "admin",
+            "email": "unique@mail.pt",
+            "password": "$2b$12$6NqVryxAuo85yO3L2.0uueoielAqd1G43TlSI0P9NWGMWNz3.VYQ6",
+            "level": 1
+        }
+    },
+    {
+        "model": "sdp.user",
+        "pk": 2,
+        "fields": {
+            "username": "normal",
+            "email": "normal@mail.pt",
+            "password": "$2b$12$rRt9IA04LoQvxS3/5cZZfO.m/EnPuvy80QsiJXyO5fWyv90tL1Qk6",
+            "level": 2
+        }
+    },
+    {
+        "model": "sdp.user",
+        "pk": 3,
+        "fields": {
+            "username": "view",
+            "email": "view@mail.pt",
+            "password": "$2b$12$VRW5DqgD2a7zUHbeBofmmue9xH8SRwtqlAKlbTizXa3RBB71wsYHq",
+            "level": 3
+        }
+    }
+]

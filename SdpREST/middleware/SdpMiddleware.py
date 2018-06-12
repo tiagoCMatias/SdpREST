@@ -20,6 +20,8 @@ class SdpMiddleware(object):
             try:
                 jwt_encoded = request.META['HTTP_JWT']
                 jwt_decoded = jwt.decode(jwt_encoded, settings.JWT_SECRET, algorithm=settings.JWT_ALGORITHM)
+            except jwt.ExpiredSignatureError:
+                return HTTP.response(401, 'Token Expired', 'Token not valid.')
             except DecodeError:
                 return HTTP.response(401, 'Token não é válido.', 'Token not valid.')
 
