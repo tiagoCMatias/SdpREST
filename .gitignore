@@ -122,7 +122,6 @@ SdpREST/settings/dev.py
 
 .migrations/
 migrations/
-migrations/*
 #SQL
 *.sqlite3
 
