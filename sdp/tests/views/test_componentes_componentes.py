@@ -26,7 +26,6 @@ class componentesCompTests(TestSuit):
         self.assertEqual(res.json()['details'], 'Validation Error. Parameter Familia is wrong')
 
         # Wrong Tenda
-        repeated_tag = 'tag'
         body = {
             'nome': 'nome',
             'descricao': 'descricao',

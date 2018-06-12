@@ -4,7 +4,7 @@ from sdp.serializers.CRM.cliente import ClienteSerializer
 
 from SdpREST.helpers.HttpException import HttpException
 from SdpREST.helpers.HttpResponseHandler import HTTP
-from SdpREST.helpers.SchemaValidator import SchemaValidator
+#from SdpREST.helpers.SchemaValidator import SchemaValidator
 
 
 class ClienteViewModel(viewsets.GenericViewSet):

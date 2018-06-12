@@ -1,6 +1,4 @@
 from rest_framework.viewsets import GenericViewSet
-
-import SdpREST
 from SdpREST.helpers.HttpResponseHandler import HTTP
 from django.db import IntegrityError
 

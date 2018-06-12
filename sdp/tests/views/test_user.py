@@ -24,11 +24,11 @@ class userTests(TestSuit):
 
         # Test to pass
         username = "test_username"
-        password = "test_password"
+        pass_to_test = "test_password"
         email = "test_email"
         body = {
             'username': username,
-            'password': password,
+            'password': pass_to_test,
             'email': email
         }
         res = self.http_request('post', self.url_path, body)
@@ -37,7 +37,7 @@ class userTests(TestSuit):
         # Test to fail - repeated email
         body = {
             'username': username,
-            'password': password,
+            'password': pass_to_test,
             'email': email
         }
         res = self.http_request('post', self.url_path, body)
