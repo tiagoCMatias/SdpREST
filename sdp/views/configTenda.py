@@ -8,6 +8,7 @@ from SdpREST.helpers.SchemaValidator import SchemaValidator
 
 class ConfigTendaViewSet(viewsets.GenericViewSet):
 
+    @staticmethod
     def list(self, request):
         try:
             queryset = ConfigTenda.objects.all()

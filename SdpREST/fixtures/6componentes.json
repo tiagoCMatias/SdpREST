@@ -1,0 +1,38 @@
+[
+    {
+        "model": "sdp.componente",
+        "pk": 1,
+        "fields": {
+            "nome": "Viga 10 Metros",
+            "peso": 20,
+            "descricao": "Viga 10 Metros para 2 Aguas",
+            "familia": [1,2,3],
+            "quantidade": 0,
+            "codigoExterno": "1.2"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 2,
+        "fields": {
+            "nome": "Viga 10 Metros",
+            "peso": 20,
+            "descricao": "Viga 10 Metros para 2 Aguas",
+            "familia": [4,5,6], //Ver a Respectiva Familia no Ficheiro 3familiaComponentes.json
+            "quantidade": 0,
+            "codigoExterno": "1.2"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 3,
+        "fields": {
+            "nome": "Exemplo",
+            "peso": 0,
+            "descricao": "Exemplo",
+            "familia": [0], //Ver a Respectiva Familia no Ficheiro 3familiaComponentes.json
+            "quantidade": 0,
+            "codigoExterno": "Exemplo"
+        }
+    }
+]
