@@ -9,7 +9,7 @@ from SdpREST.helpers.SchemaValidator import SchemaValidator
 class ConfigTendaViewSet(viewsets.GenericViewSet):
 
     @staticmethod
-    def list(self, request):
+    def list(self):
         try:
             queryset = ConfigTenda.objects.all()
             data = ConfigTendaSerializer(queryset, many=True).to_representation(queryset)
