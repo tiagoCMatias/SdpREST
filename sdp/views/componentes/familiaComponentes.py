@@ -1,4 +1,4 @@
-from sdp.models.estrutura.componentes.familiaComponentes import FamiliaComponentes
+from sdp.models.Componentes.familiaComponentes import FamiliaComponentes
 
 from rest_framework import viewsets
 from sdp.serializers.componentes.familiaComponente import FamiliaComponentesSerializer

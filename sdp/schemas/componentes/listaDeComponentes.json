@@ -1,0 +1,18 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "componente": {
+        "type": "integer"
+      },
+      "quantidade": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "componente",
+      "quantidade"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from sdp.models.tendas.configTenda import ConfigTenda
+from sdp.models.Tendas.configTenda import ConfigTenda
 
 class ConfigTendaSerializer(serializers.ModelSerializer):
 

@@ -6,9 +6,11 @@ class ClientQuerySet(models.QuerySet):
             return self.filter(nome=nome).get()
         else:
             return ""
+
     def get_nome(self, id):
         if self.filter(pk=id):
             return self.filter(pk=id).get()
+
 
 class Cliente(models.Model):
     id = models.AutoField(primary_key=True)

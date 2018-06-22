@@ -1,13 +1,18 @@
 from django.db import models
 
 #Models
-from sdp.models.estrutura.componentes.familiaComponentes import FamiliaComponentes
+from sdp.models.Componentes.familiaComponentes import FamiliaComponentes
 
 
 class ComponenteQuerySet(models.QuerySet):
     def count_familia(self, familia):
         return self.filter(familia=familia).count()
 
+    def check_item(self, id):
+        if self.filter(pk=id):
+            return self.filter(pk=id).get()
+        else:
+            return False
 
 class Componente(models.Model):
     id = models.AutoField(primary_key=True)

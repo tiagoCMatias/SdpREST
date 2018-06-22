@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from sdp.models.tendas.tipoTendas import TipoTenda
+from sdp.models.Tendas.tipoTendas import TipoTenda
 
 class TipoTendaSerializer(serializers.ModelSerializer):
 

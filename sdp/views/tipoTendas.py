@@ -1,7 +1,7 @@
 from rest_framework.viewsets import GenericViewSet
 from SdpREST.helpers.HttpException import HttpException
 from SdpREST.helpers.HttpResponseHandler import HTTP
-from sdp.models.tendas.tipoTendas import TipoTenda
+from sdp.models.Tendas.tipoTendas import TipoTenda
 from sdp.serializers.tendas.tipoTenda import TipoTendaSerializer
 
 class TipoTendasViewSet(GenericViewSet):

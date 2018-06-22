@@ -1,8 +1,8 @@
 # Models
-from sdp.models.estrutura.componentes.componente import Componente
-from sdp.models.estrutura.componentes.familiaComponentes import FamiliaComponentes
-from sdp.models.tendas.configTenda import ConfigTenda
-from sdp.models.estrutura.listaComponentes import ListaDeComponentes
+from sdp.models.Componentes.componente import Componente
+from sdp.models.Componentes.familiaComponentes import FamiliaComponentes
+from sdp.models.Tendas.configTenda import ConfigTenda
+from sdp.models.Componentes.familiaToComponente import FamiliaToComponentes
 from rest_framework import viewsets
 from sdp.serializers.componentes.componentes import FullComponentesSerializer
 from SdpREST.helpers.HttpException import HttpException
@@ -54,11 +54,11 @@ class ComponentesViewModel(viewsets.GenericViewSet):
             lista_de_components_to_save = list()
             for tenda_id in data['tenda']:
                 tipoTenda = ConfigTenda.objects.get(pk=tenda_id)
-                lista_de_components_to_save.append(ListaDeComponentes(
+                lista_de_components_to_save.append(FamiliaToComponentes(
                     componente=novoComponente,
                     tenda=tipoTenda
                 ))
-            ListaDeComponentes.objects.bulk_create(lista_de_components_to_save)
+            FamiliaToComponentes.objects.bulk_create(lista_de_components_to_save)
 
 
         except HttpException as e:
