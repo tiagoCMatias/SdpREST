@@ -30,5 +30,7 @@ urlpatterns = [
     url(r'login/', AuthViewSet.as_view({'post': 'login'}), name='login'),
     url(r'verify/', AuthViewSet.as_view({'post': 'verify'}), name='verify'),
     url(r'createlist/', ListaComponentesViewSet.as_view({'post': 'createList'}), name='createList'),
+    url(r'getItems/', ListaComponentesViewSet.as_view({'post': 'getItemList'}), name='getItemList'),
+
     path('', include(router.urls)),
 ]
