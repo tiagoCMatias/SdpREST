@@ -3,9 +3,21 @@
         "model": "sdp.componente",
         "pk": 1,
         "fields": {
-            "nome": "Viga 5 Metros",
+            "nome": "Viga Conica",
             "peso": 20,
-            "descricao": "Viga 5 Metros para 2 Aguas",
+            "descricao": "Viga Conica para TC3",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.1"
+        }
+    },[
+    {
+        "model": "sdp.componente",
+        "pk": 1,
+        "fields": {
+            "nome": "Viga Conica",
+            "peso": 20,
+            "descricao": "Viga Conica para TC3",
             "familia": 1,
             "quantidade": 20,
             "genCodigo": "1.1"

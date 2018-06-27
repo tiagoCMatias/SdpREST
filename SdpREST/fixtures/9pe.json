@@ -1,0 +1,134 @@
+[
+    {
+        "model": "sdp.componente",
+        "pk": 19,
+        "fields": {
+            "nome": "Pé Conica",
+            "peso": 1,
+            "descricao": "Pé Conica TC3 / TC5",
+            "familia": 2,
+            "quantidade": 1,
+            "genCodigo": "2.1"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 20,
+        "fields": {
+            "nome": "Pé Iglo",
+            "peso": 1,
+            "descricao": "Pé Iglo 10",
+            "familia": 2,
+            "quantidade": 1,
+            "genCodigo": "2.2"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 21,
+        "fields": {
+            "nome": "Pé Iglo",
+            "peso": 1,
+            "descricao": "Pé Iglo 15",
+            "familia": 2,
+            "quantidade": 1,
+            "genCodigo": "2.3"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 22,
+        "fields": {
+            "nome": "Pé Iglo",
+            "peso": 1,
+            "descricao": "Pé Iglo 25",
+            "familia": 2,
+            "quantidade": 1,
+            "genCodigo": "2.4"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 23,
+        "fields": {
+            "nome": "Pé 2 Águas",
+            "peso": 1,
+            "descricao": "Pé 2 Águas 10 3M",
+            "familia": 2,
+            "quantidade": 1,
+            "genCodigo": "2.5"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 24,
+        "fields": {
+            "nome": "Pé 2 Águas",
+            "peso": 1,
+            "descricao": "Pé 2 Águas 8 3M",
+            "familia": 2,
+            "quantidade": 1,
+            "genCodigo": "2.6"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 25,
+        "fields": {
+            "nome": "Pé 2 Águas",
+            "peso": 1,
+            "descricao": "Pé 2 Águas 15 3M",
+            "familia": 2,
+            "quantidade": 1,
+            "genCodigo": "2.7"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 26,
+        "fields": {
+            "nome": "Pé 2 Águas",
+            "peso": 1,
+            "descricao": "Pé 2 Águas 25 3M",
+            "familia": 2,
+            "quantidade": 1,
+            "genCodigo": "2.8"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 27,
+        "fields": {
+            "nome": "Pé 2 Águas",
+            "peso": 1,
+            "descricao": "Pé 2 Águas 10 4M",
+            "familia": 2,
+            "quantidade": 1,
+            "genCodigo": "2.9"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 28,
+        "fields": {
+            "nome": "Pé 2 Águas",
+            "peso": 1,
+            "descricao": "Pé 2 Águas 15 4M",
+            "familia": 2,
+            "quantidade": 1,
+            "genCodigo": "2.10"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 29,
+        "fields": {
+            "nome": "Pé 2 Águas",
+            "peso": 1,
+            "descricao": "Pé 2 Águas 25 4M",
+            "familia": 2,
+            "quantidade": 1,
+            "genCodigo": "2.11"
+        }
+    }
+]

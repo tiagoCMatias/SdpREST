@@ -11,11 +11,13 @@ from SdpREST.helpers.HttpException import HttpException
 from sdp.serializers.componentes.listaDeComponentes import ListaDeComponentesSerializer
 from sdp.serializers.componentes.componentes import ComponenteFamiliaSerializer
 
+
 def checkList(data):
     for item in data:
         if (Componente.objects.check_item(item['componente']) == False):
             return False
     return True
+
 
 def getItem(itemId):
     componente = Componente.objects.filter(id=itemId)

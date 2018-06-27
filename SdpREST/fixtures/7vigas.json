@@ -1,0 +1,219 @@
+[
+    {
+        "model": "sdp.componente",
+        "pk": 1,
+        "fields": {
+            "nome": "Viga Conica",
+            "peso": 20,
+            "descricao": "Viga Conica para TC3",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.1"
+        }
+    },
+
+    {
+        "model": "sdp.componente",
+        "pk": 2,
+        "fields": {
+            "nome": "Viga Conica",
+            "peso": 20,
+            "descricao": "Viga Conica para TC5",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.2"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 3,
+        "fields": {
+            "nome": "Viga Iglo Normal",
+            "peso": 20,
+            "descricao": "Viga Iglo Normal 7.5",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.3"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 4,
+        "fields": {
+            "nome": "Viga Iglo Redondo",
+            "peso": 20,
+            "descricao": "Viga Iglo Redondo 7.5",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.4"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 5,
+        "fields": {
+            "nome": "Viga Iglo Normal",
+            "peso": 20,
+            "descricao": "Viga Iglo Normal 10",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.5"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 6,
+        "fields": {
+            "nome": "Viga Iglo Redondo",
+            "peso": 20,
+            "descricao": "Viga Iglo Redondo 10",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.6"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 7,
+        "fields": {
+            "nome": "Viga Iglo Normal",
+            "peso": 20,
+            "descricao": "Viga Iglo Normal 15",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.7"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 8,
+        "fields": {
+            "nome": "Viga Iglo Redondo",
+            "peso": 20,
+            "descricao": "Viga Iglo Redondo 15",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.8"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 9,
+        "fields": {
+            "nome": "Viga Iglo Normal",
+            "peso": 20,
+            "descricao": "Viga Iglo Normal 20",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.9"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 10,
+        "fields": {
+            "nome": "Viga Iglo Redondo",
+            "peso": 20,
+            "descricao": "Viga Iglo Redondo 20",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.10"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 11,
+        "fields": {
+            "nome": "Viga Iglo Normal",
+            "peso": 20,
+            "descricao": "Viga Iglo Normal 25",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.11"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 12,
+        "fields": {
+            "nome": "Viga Iglo Redondo",
+            "peso": 20,
+            "descricao": "Viga Iglo Redondo 25",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.12"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 13,
+        "fields": {
+            "nome": "Viga 2 Águas",
+            "peso": 20,
+            "descricao": "Viga 2 Águas 5/7.5",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.13"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 14,
+        "fields": {
+            "nome": "Viga 2 Águas",
+            "peso": 20,
+            "descricao": "Viga 2 Águas 10/12.5",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.14"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 15,
+        "fields": {
+            "nome": "Viga 2 Águas",
+            "peso": 20,
+            "descricao": "Viga 2 Águas 8",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.15"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 16,
+        "fields": {
+            "nome": "Viga 2 Águas",
+            "peso": 20,
+            "descricao": "Viga 2 Águas 15",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.16"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 17,
+        "fields": {
+            "nome": "Viga 2 Águas",
+            "peso": 20,
+            "descricao": "Viga 2 Águas 20",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.17"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 18,
+        "fields": {
+            "nome": "Viga 2 Águas",
+            "peso": 20,
+            "descricao": "Viga 2 Águas 25",
+            "familia": 1,
+            "quantidade": 20,
+            "genCodigo": "1.18"
+        }
+    }
+]

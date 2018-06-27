@@ -1,0 +1,134 @@
+[
+    {
+        "model": "sdp.componente",
+        "pk": 30,
+        "fields": {
+            "nome": "Ferro Esticar Lateral",
+            "peso": 1,
+            "descricao": "Ferro Esticar Lateral TC3",
+            "familia": 3,
+            "quantidade": 1,
+            "genCodigo": "3.1"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 31,
+        "fields": {
+            "nome": "Ferro Esticar Lateral",
+            "peso": 1,
+            "descricao": "Ferro Esticar Lateral TC5",
+            "familia": 3,
+            "quantidade": 1,
+            "genCodigo": "3.2"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 32,
+        "fields": {
+            "nome": "Ferro Esticar Lateral",
+            "peso": 1,
+            "descricao": "Ferro Esticar Lateral 1.25",
+            "familia": 3,
+            "quantidade": 1,
+            "genCodigo": "3.3"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 33,
+        "fields": {
+            "nome": "Ferro Esticar Lateral",
+            "peso": 1,
+            "descricao": "Ferro Esticar Lateral 2.5",
+            "familia": 3,
+            "quantidade": 1,
+            "genCodigo": "3.4"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 34,
+        "fields": {
+            "nome": "Ferro Esticar Lateral",
+            "peso": 1,
+            "descricao": "Ferro Esticar Lateral 3.75",
+            "familia": 3,
+            "quantidade": 1,
+            "genCodigo": "3.5"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 35,
+        "fields": {
+            "nome": "Ferro Esticar Lateral",
+            "peso": 1,
+            "descricao": "Ferro Esticar Lateral 5",
+            "familia": 3,
+            "quantidade": 1,
+            "genCodigo": "3.6"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 36,
+        "fields": {
+            "nome": "Ferro Esticar Lateral Redondo",
+            "peso": 1,
+            "descricao": "Ferro Esticar Lateral Redondo 7.5",
+            "familia": 3,
+            "quantidade": 1,
+            "genCodigo": "3.7"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 37,
+        "fields": {
+            "nome": "Ferro Esticar Lateral Redondo",
+            "peso": 1,
+            "descricao": "Ferro Esticar Lateral Redondo 10",
+            "familia": 3,
+            "quantidade": 1,
+            "genCodigo": "3.8"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 38,
+        "fields": {
+            "nome": "Ferro Esticar Lateral Redondo",
+            "peso": 1,
+            "descricao": "Ferro Esticar Lateral Redondo 15",
+            "familia": 3,
+            "quantidade": 1,
+            "genCodigo": "3.9"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 39,
+        "fields": {
+            "nome": "Ferro Esticar Lateral Redondo",
+            "peso": 1,
+            "descricao": "Ferro Esticar Lateral Redondo 20",
+            "familia": 3,
+            "quantidade": 1,
+            "genCodigo": "3.10"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 40,
+        "fields": {
+            "nome": "Ferro Esticar Lateral Redondo",
+            "peso": 1,
+            "descricao": "Ferro Esticar Lateral Redondo 25",
+            "familia": 3,
+            "quantidade": 1,
+            "genCodigo": "3.11"
+        }
+    }
+]

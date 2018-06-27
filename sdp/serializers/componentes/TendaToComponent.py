@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from sdp.models.Componentes.familiaToComponente import FamiliaToComponentes
+from sdp.models.Componentes.TendaComponente import TendaComponente
 from sdp.serializers.tendas.configTenda import ConfigTendaSerializer
 
 
@@ -23,5 +23,5 @@ class TendaToComponentSerializer(serializers.ModelSerializer):
         return data
 
     class Meta:
-        model = FamiliaToComponentes
+        model = TendaComponente
         fields = ('componente', 'tenda')

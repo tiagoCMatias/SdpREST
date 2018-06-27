@@ -1,0 +1,162 @@
+[
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 1,
+        "fields": {
+            "componente": 1,
+            "tenda": 1
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 2,
+        "fields": {
+            "componente": 2,
+            "tenda": 2
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 3,
+        "fields": {
+            "componente": 3,
+            "tenda": 3
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 4,
+        "fields": {
+            "componente": 4,
+            "tenda": 3
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 5,
+        "fields": {
+            "componente": 5,
+            "tenda": 4
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 6,
+        "fields": {
+            "componente": 6,
+            "tenda": 4
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 7,
+        "fields": {
+            "componente": 7,
+            "tenda": 5
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 8,
+        "fields": {
+            "componente": 8,
+            "tenda": 5
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 9,
+        "fields": {
+            "componente": 9,
+            "tenda": 6
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 10,
+        "fields": {
+            "componente": 10,
+            "tenda": 6
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 11,
+        "fields": {
+            "componente": 11,
+            "tenda": 7
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 12,
+        "fields": {
+            "componente": 12,
+            "tenda": 7
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 13,
+        "fields": {
+            "componente": 13,
+            "tenda": 8
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 14,
+        "fields": {
+            "componente": 13,
+            "tenda": 9
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 15,
+        "fields": {
+            "componente": 14,
+            "tenda": 11
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 16,
+        "fields": {
+            "componente": 14,
+            "tenda": 12
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 17,
+        "fields": {
+            "componente": 15,
+            "tenda": 10
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 18,
+        "fields": {
+            "componente": 16,
+            "tenda": 13
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 19,
+        "fields": {
+            "componente": 17,
+            "tenda": 15
+        }
+    },
+    {
+        "model": "sdp.TendaComponente",
+        "pk": 20,
+        "fields": {
+            "componente": 18,
+            "tenda": 16
+        }
+    }
+]
