@@ -1,0 +1,62 @@
+[
+    {
+        "model": "sdp.componente",
+        "pk": 41,
+        "fields": {
+            "nome": "Cortineiro Iglo 5",
+            "peso": 1,
+            "descricao": "Cortineiro Iglo 10 Tamanho 5",
+            "familia": 4,
+            "quantidade": 1,
+            "genCodigo": "4.1"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 42,
+        "fields": {
+            "nome": "Cortineiro 5",
+            "peso": 1,
+            "descricao": "Cortineiro 15 Tamanho 5",
+            "familia": 4,
+            "quantidade": 1,
+            "genCodigo": "4.2"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 43,
+        "fields": {
+            "nome": "Cortineiro Iglo 5",
+            "peso": 1,
+            "descricao": "Cortineiro Iglo 25 Tamanho 5",
+            "familia": 4,
+            "quantidade": 1,
+            "genCodigo": "4.3"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 44,
+        "fields": {
+            "nome": "Cortineiro 2 Águas 5",
+            "peso": 1,
+            "descricao": "Cortineiro 2 Águas 25 Tamanho 5",
+            "familia": 4,
+            "quantidade": 1,
+            "genCodigo": "4.4"
+        }
+    },
+    {
+        "model": "sdp.componente",
+        "pk": 45,
+        "fields": {
+            "nome": "Cortineiro Iglo 3.75",
+            "peso": 1,
+            "descricao": "Cortineiro Iglo Tamanho 3.75",
+            "familia": 4,
+            "quantidade": 1,
+            "genCodigo": "4.5"
+        }
+    }
+]
