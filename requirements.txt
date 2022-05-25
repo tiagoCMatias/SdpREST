@@ -11,7 +11,7 @@ djangorestframework-jwt==1.11.0
 idna==2.6
 jsonschema==2.6.0
 pycparser==2.18
-PyJWT==1.6.1
+PyJWT==2.4.0
 pytz==2018.4
 requests==2.18.4
 rest-framework-auth0==0.4.6
